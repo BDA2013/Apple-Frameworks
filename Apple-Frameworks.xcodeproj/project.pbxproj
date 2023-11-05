@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		61EAF40F2AF8328D00152728 /* Apple_FrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EAF40E2AF8328D00152728 /* Apple_FrameworksApp.swift */; };
-		61EAF4112AF8328D00152728 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EAF4102AF8328D00152728 /* ContentView.swift */; };
+		61EAF4112AF8328D00152728 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EAF4102AF8328D00152728 /* FrameworkGridView.swift */; };
 		61EAF4132AF8328F00152728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61EAF4122AF8328F00152728 /* Assets.xcassets */; };
 		61EAF4162AF8328F00152728 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61EAF4152AF8328F00152728 /* Preview Assets.xcassets */; };
+		61EBE2CC2AF8370600ECB420 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EBE2CB2AF8370600ECB420 /* Framework.swift */; };
+		61EBE2CE2AF83C8800ECB420 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EBE2CD2AF83C8800ECB420 /* FrameworkTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		61EAF40B2AF8328D00152728 /* Apple-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61EAF40E2AF8328D00152728 /* Apple_FrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FrameworksApp.swift; sourceTree = "<group>"; };
-		61EAF4102AF8328D00152728 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		61EAF4102AF8328D00152728 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		61EAF4122AF8328F00152728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61EAF4152AF8328F00152728 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		61EBE2CB2AF8370600ECB420 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		61EBE2CD2AF83C8800ECB420 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		61EAF40D2AF8328D00152728 /* Apple-Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				61EBE2CB2AF8370600ECB420 /* Framework.swift */,
+				61EBE2CF2AF83C9200ECB420 /* Views */,
 				61EAF40E2AF8328D00152728 /* Apple_FrameworksApp.swift */,
-				61EAF4102AF8328D00152728 /* ContentView.swift */,
 				61EAF4122AF8328F00152728 /* Assets.xcassets */,
 				61EAF4142AF8328F00152728 /* Preview Content */,
 			);
@@ -65,6 +70,15 @@
 				61EAF4152AF8328F00152728 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		61EBE2CF2AF83C9200ECB420 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61EAF4102AF8328D00152728 /* FrameworkGridView.swift */,
+				61EBE2CD2AF83C8800ECB420 /* FrameworkTitleView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61EAF4112AF8328D00152728 /* ContentView.swift in Sources */,
+				61EAF4112AF8328D00152728 /* FrameworkGridView.swift in Sources */,
+				61EBE2CC2AF8370600ECB420 /* Framework.swift in Sources */,
+				61EBE2CE2AF83C8800ECB420 /* FrameworkTitleView.swift in Sources */,
 				61EAF40F2AF8328D00152728 /* Apple_FrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
