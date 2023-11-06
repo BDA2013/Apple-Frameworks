@@ -34,7 +34,7 @@ struct FrameworkDetailView: View {
                 
             
             Spacer()
-            AFButton(text: "Learn More")
+            AFButton(text: "Learn More", framework: framework)
         }
         .padding()
         

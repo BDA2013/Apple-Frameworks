@@ -10,11 +10,14 @@ import SwiftUI
 struct AFButton: View {
     
     var text: String
+    var framework: Framework
+    
+    @State private var isShowingSafariView = false
     
     var body: some View {
         
         Button {
-
+            isShowingSafariView = true
         } label: {
             Text(text)
                 .font(.title2)
@@ -25,9 +28,13 @@ struct AFButton: View {
                 .cornerRadius(10)
         }
         .padding()
+        .fullScreenCover(isPresented: $isShowingSafariView, content: {
+            SafariView(url: URL(string: framework.urlString)!)
+        })
     }
 }
 
+
 #Preview {
-    AFButton(text: "Test Text")
+    AFButton(text: "Test Link", framework: Framework.MockData.sampleFramework)
 }
