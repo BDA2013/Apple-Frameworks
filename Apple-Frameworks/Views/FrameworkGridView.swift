@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
+    ///Data will be persisted whenever it's reloaded
+    @StateObject var viewModel = FrameworkGridViewModel()
+    
     var body: some View {
         let colums: [GridItem] = [GridItem(.flexible()),
                                   GridItem(.flexible()),
@@ -19,10 +22,17 @@ struct FrameworkGridView: View {
                     ForEach(Framework.MockData.frameworks) {
                         framework in
                         FrameworkTitleView(framework: framework)
+                            .onTapGesture {
+                                print("Tapped on \(framework.name)")
+                                viewModel.selectedFramework = framework
+                            }
                     }
                 })
             }
             .navigationTitle("🍎 Frameworks")
+            .sheet(isPresented: $viewModel.isShowingDetailView) {
+                FrameworkDetailView(framework: viewModel.selectedFramework ?? Framework.MockData.sampleFramework, isShowingDetailView: $viewModel.isShowingDetailView)
+            }
         }
     }
 }
