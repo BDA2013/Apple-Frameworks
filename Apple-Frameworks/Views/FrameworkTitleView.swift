@@ -24,3 +24,7 @@ struct FrameworkTitleView: View {
         .padding()
     }
 }
+
+#Preview {
+    FrameworkTitleView(framework: Framework.MockData.sampleFramework)
+}
