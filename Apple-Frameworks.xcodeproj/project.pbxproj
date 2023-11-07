@@ -17,6 +17,7 @@
 		61EBE2D92AF96DDD00ECB420 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EBE2D82AF96DDD00ECB420 /* AFButton.swift */; };
 		61EBE2DE2AF9735A00ECB420 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EBE2DD2AF9735A00ECB420 /* FrameworkGridViewModel.swift */; };
 		61EBE2E12AF97E0700ECB420 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EBE2E02AF97E0700ECB420 /* SafariView.swift */; };
+		61EBE2E32AFAAD4600ECB420 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EBE2E22AFAAD4600ECB420 /* XDismissButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		61EBE2D82AF96DDD00ECB420 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		61EBE2DD2AF9735A00ECB420 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		61EBE2E02AF97E0700ECB420 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		61EBE2E22AFAAD4600ECB420 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				61EBE2D82AF96DDD00ECB420 /* AFButton.swift */,
+				61EBE2E22AFAAD4600ECB420 /* XDismissButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				61EBE2D12AF8501200ECB420 /* Framework.swift in Sources */,
 				61EBE2D92AF96DDD00ECB420 /* AFButton.swift in Sources */,
+				61EBE2E32AFAAD4600ECB420 /* XDismissButton.swift in Sources */,
 				61EAF4112AF8328D00152728 /* FrameworkGridView.swift in Sources */,
 				61EBE2CE2AF83C8800ECB420 /* FrameworkTitleView.swift in Sources */,
 				61EBE2E12AF97E0700ECB420 /* SafariView.swift in Sources */,

@@ -12,11 +12,9 @@ struct FrameworkGridView: View {
     @StateObject var viewModel = FrameworkGridViewModel()
     
     var body: some View {
-        let colums: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
-        
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: colums, content: {
+                LazyVGrid(columns: viewModel.colums, content: {
                     ForEach(Framework.MockData.frameworks) {
                         framework in
                         FrameworkTitleView(framework: framework)
